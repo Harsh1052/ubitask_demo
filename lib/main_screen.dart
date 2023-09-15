@@ -24,8 +24,8 @@ class MainScreen extends StatelessWidget {
             curve: Curves.linear,
           );
         } else {
-          if (20 > _scrollController.offset) {
-            await Future.delayed(const Duration(seconds: 2));
+          if (100 > _scrollController.offset) {
+            await Future.delayed(const Duration(seconds: 1));
           }
           _scrollController.animateTo(
             _scrollController.offset + 20.0,
